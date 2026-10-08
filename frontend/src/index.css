@@ -1,0 +1,622 @@
+/* ============================================
+   DARK & MODERN COLOR SCHEME
+   Sleek, Professional, Patient-Centric
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background: #0a0a0f;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+/* ============================================
+   PRIMARY COLORS - Dark & Premium
+   ============================================ */
+
+:root {
+  --primary-blue: #3b82f6;
+  --primary-blue-dark: #2563eb;
+  --primary-blue-light: #60a5fa;
+  
+  --secondary-purple: #8b5cf6;
+  --secondary-purple-dark: #7c3aed;
+  
+  --accent-gold: #f59e0b;
+  --accent-gold-light: #fbbf24;
+  
+  --success-green: #10b981;
+  --success-green-dark: #059669;
+  
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  
+  --bg-dark: #0a0a0f;
+  --bg-card: #16161f;
+  --bg-card-hover: #1e1e2a;
+  --bg-input: #1e1e2a;
+  
+  --border-color: #2a2a3a;
+  --border-light: #3a3a4a;
+  
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 8px 32px rgba(59, 130, 246, 0.15);
+  
+  --gradient-primary: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  --gradient-dark: linear-gradient(135deg, #0a0a0f, #16161f);
+  --gradient-card: linear-gradient(135deg, #16161f, #1e1e2a);
+}
+
+/* ============================================
+   SCROLLBAR - Dark Theme
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a3a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(59, 130, 246, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: #1e1e2a;
+  color: #e2e8f0;
+  padding: 12px 28px;
+  border: 1px solid #2a2a3a;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background: #2a2a3a;
+  border-color: #3b82f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.1);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+}
+
+.btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.4);
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 20px rgba(239, 68, 68, 0.3);
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(239, 68, 68, 0.4);
+}
+
+/* ============================================
+   CARDS - Glassmorphism Dark
+   ============================================ */
+
+.card {
+  background: #16161f;
+  padding: 28px;
+  border-radius: 20px;
+  border: 1px solid #2a2a3a;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 8px 40px rgba(59, 130, 246, 0.08);
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   PATIENT-FOCUSED CARDS
+   ============================================ */
+
+.card-patient {
+  background: linear-gradient(135deg, #16161f, #1a1a2e);
+  border-left: 4px solid #3b82f6;
+  border-radius: 20px;
+  padding: 24px;
+  border: 1px solid #2a2a3a;
+}
+
+.card-welcome {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  border: 1px solid #2a2a3a;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+/* ============================================
+   INPUT FIELDS - Dark
+   ============================================ */
+
+.input-field {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #2a2a3a;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #0a0a0f;
+  color: #e2e8f0;
+}
+
+.input-field:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+  background: #16161f;
+}
+
+.input-field::placeholder {
+  color: #64748b;
+}
+
+/* ============================================
+   LABELS
+   ============================================ */
+
+.label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #e2e8f0;
+  font-size: 14px;
+}
+
+/* ============================================
+   BADGES - Dark Theme
+   ============================================ */
+
+.badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-success {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-warning {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.badge-info {
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.badge-voice {
+  background: rgba(139, 92, 246, 0.2);
+  color: #a78bfa;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.badge-video {
+  background: rgba(236, 72, 153, 0.2);
+  color: #f472b6;
+  border: 1px solid rgba(236, 72, 153, 0.3);
+}
+
+.badge-patient {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* ============================================
+   CONTAINER
+   ============================================ */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============================================
+   SPINNER - Dark
+   ============================================ */
+
+.spinner {
+  border: 4px solid #1e1e2a;
+  border-top: 4px solid #3b82f6;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ============================================
+   VIDEO CONTAINER
+   ============================================ */
+
+.video-container {
+  background: #000000;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  border: 1px solid #2a2a3a;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================================
+   MEDIA SECTIONS
+   ============================================ */
+
+.media-section {
+  margin-top: 24px;
+  padding: 20px;
+  background: #0a0a0f;
+  border-radius: 16px;
+  border: 1px solid #2a2a3a;
+}
+
+.media-section h4 {
+  color: #e2e8f0;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* ============================================
+   VOICE RECORDER
+   ============================================ */
+
+.voice-recorder {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.recording-indicator {
+  color: #ef4444;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* ============================================
+   AUDIO PLAYER - Dark
+   ============================================ */
+
+.audio-player {
+  margin-top: 12px;
+  padding: 16px;
+  background: #0a0a0f;
+  border-radius: 12px;
+  border: 1px solid #2a2a3a;
+}
+
+.audio-player audio {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ============================================
+   DOCTOR VOICE NOTE - Dark
+   ============================================ */
+
+.voice-note-doctor {
+  margin-top: 12px;
+  padding: 16px;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  border-radius: 12px;
+  border-left: 4px solid #3b82f6;
+}
+
+.voice-note-patient {
+  margin-top: 12px;
+  padding: 16px;
+  background: linear-gradient(135deg, #1a2e2a, #16213e);
+  border-radius: 12px;
+  border-left: 4px solid #10b981;
+}
+
+/* ============================================
+   WELCOME BANNER - Dark Glow
+   ============================================ */
+
+.welcome-banner {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #2a2a3a;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.05), transparent 70%);
+  pointer-events: none;
+}
+
+.welcome-banner h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.welcome-banner p {
+  opacity: 0.8;
+  font-size: 18px;
+  color: #94a3b8;
+}
+
+/* ============================================
+   PATIENT STATS - Dark
+   ============================================ */
+
+.patient-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.stat-card {
+  background: #16161f;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #2a2a3a;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: #3b82f6;
+  transform: translateY(-2px);
+}
+
+.stat-card .number {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-card .label {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+/* ============================================
+   PATIENT-CENTRIC MESSAGES - Dark
+   ============================================ */
+
+.patient-message {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #2a2a3a;
+}
+
+.patient-message .icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.patient-message h3 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #e2e8f0;
+}
+
+.patient-message p {
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+/* ============================================
+   CONSULTATION CARDS - Dark
+   ============================================ */
+
+.consultation-card {
+  background: #16161f;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #2a2a3a;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.consultation-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.05);
+}
+
+.consultation-card .doctor-name {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+.consultation-card .date {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.consultation-card .diagnosis {
+  color: #60a5fa;
+  margin-top: 8px;
+}
+
+/* ============================================
+   LINK STYLES
+   ============================================ */
+
+a {
+  color: #60a5fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #93bbfc;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .welcome-banner h1 {
+    font-size: 28px;
+  }
+  
+  .card {
+    padding: 20px;
+  }
+}
+
+/* ============================================
+   DARK THEME SPECIFIC FIXES
+   ============================================ */
+
+/* Toast notifications - Dark */
+.go3457323094 {
+  background: #1e1e2a !important;
+  color: #e2e8f0 !important;
+  border: 1px solid #2a2a3a !important;
+}
+
+/* Links inside dark theme */
+.consultation-card a {
+  color: #60a5fa;
+}
+
+/* Badge containers */
+.badge-container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+/* Hover effects on clickable elements */
+.clickable {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clickable:hover {
+  opacity: 0.8;
+}
